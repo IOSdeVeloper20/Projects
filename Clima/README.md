@@ -1,54 +1,36 @@
+# Clima - iOS Weather App
 
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
+Clima is an iOS weather forecasting app built with Swift. It allows users to check the weather based on their current location using the iPhone's GPS data, or they can manually search for the weather in any city. The app features a clean, dark-mode-enabled interface and utilizes the OpenWeather API to provide real-time weather data.
 
-#  Clima
+## Features
 
-## Our Goal
+- **Current Weather Information**: Get up-to-date weather information based on your location or by manually searching for a city.
+- **Dark Mode**: A dark mode theme for a comfortable viewing experience.
+- **Weather Icons**: Displays weather conditions using intuitive vector icons.
+- **Location Services**: Uses Core Location to fetch and display the current weather based on the user’s GPS.
+- **Real-Time Data**: Fetches weather data from the OpenWeather API and updates live.
 
-It’s time to take our app development skills to the next level. We’re going to introduce you to the wonderful world of Application Programming Interfaces (APIs) to grab live data from the internet. If you’re dreaming of making that Twitter-powered stock trading app then you’re about add some serious tools to your toolbelt!
+## What I Learned
+
+- How to create a dark-mode-enabled app.
+- How to use vector images as image assets.
+- How to handle user input with `UITextField` and the delegate pattern.
+- Understanding and using Swift protocols, extensions, and the `guard` keyword.
+- How to use closures and completion handlers in Swift.
+- How to use `URLSession` for network requests and parse JSON with Swift’s native `Encodable` and `Decodable` protocols.
+- Understanding and utilizing `Grand Central Dispatch` to handle tasks on the main thread.
+- How to get the current location of the user using the Core Location framework.
 
 
-## What you will create
+## Dependencies
+- CoreLocation: To get the current location of the user.
+- URLSession: For making network requests to the OpenWeather API.
+- JSONDecoder: To parse the JSON response from the API.
 
-By the end of the module, you will have made a beautiful, dark-mode enabled weather app. You'll be able to check the weather for the current location based on the GPS data from the iPhone as well as by searching for a city manually. 
+## API
+The app uses the OpenWeather API to fetch weather data.
 
-## What you will learn
+## Example API Call
+https://api.openweathermap.org/data/2.5/weather?q=London&appid=YOUR_API_KEY&units=metric
 
-* How to create a dark-mode enabled app.
-* How to use vector images as image assets.
-* Learn to use the UITextField to get user input. 
-* Learn about the delegate pattern.
-* Swift protocols and extensions. 
-* Swift guard keyword. 
-* Swift computed properties.
-* Swift closures and completion handlers.
-* Learn to use URLSession to network and make HTTP requests.
-* Parse JSON with the native Encodable and Decodable protocols. 
-* Learn to use Grand Central Dispatch to fetch the main thread.
-* Learn to use Core Location to get the current location from the phone GPS. 
-
-### Condition Codes
-```
-switch conditionID {
-        case 200...232:
-            return "cloud.bolt"
-        case 300...321:
-            return "cloud.drizzle"
-        case 500...531:
-            return "cloud.rain"
-        case 600...622:
-            return "cloud.snow"
-        case 701...781:
-            return "cloud.fog"
-        case 800:
-            return "sun.max"
-        case 801...804:
-            return "cloud.bolt"
-        default:
-            return "cloud"
-        }
-```
-
->This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
-
-![End Banner](Documentation/readme-end-banner.png)
+(This API call returns weather data for the specified city (London). Replace YOUR_API_KEY with your actual API key.)
