@@ -1,6 +1,6 @@
-# Clima - iOS Weather App
+# Clima - Mobile Weather App
 
-Clima is an iOS weather forecasting app built with Swift. It allows users to check the weather based on their current location using the iPhone's GPS data, or they can manually search for the weather in any city. The app features a clean, dark-mode-enabled interface and utilizes the OpenWeather API to provide real-time weather data.
+Clima is a weather forecasting app. It allows users to check the weather based on their current location using the iPhone's GPS data, or they can manually search for the weather in any city. The app features a clean, dark-mode-enabled interface and utilizes the OpenWeather API to provide real-time weather data.
 
 ## Features
 
